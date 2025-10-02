@@ -1,9 +1,8 @@
 "use client";
 
-import * as React from "react";
 import { motion } from "framer-motion";
+import { Briefcase, GraduationCap, MapPin } from "lucide-react";
 import { useInView } from "react-intersection-observer";
-import { Calendar, MapPin, Briefcase, GraduationCap } from "lucide-react";
 
 interface TimelineItem {
   id: string;

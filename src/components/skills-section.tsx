@@ -123,9 +123,9 @@ export function SkillsSection() {
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">
             Skills & <span className="text-primary">Expertise</span>
           </h1>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             I specialize in modern web technologies and have extensive experience in both frontend and backend development. 
-            Here's a breakdown of my technical skills and proficiency levels.
+            Here&apos;s a breakdown of my technical skills and proficiency levels.
           </p>
         </motion.div>
 
@@ -211,7 +211,7 @@ export function SkillsSection() {
             <h3 className="text-2xl font-bold mb-4">What I Bring to the Table</h3>
             <p className="text-muted-foreground text-lg leading-relaxed">
               With a strong foundation in both frontend and backend technologies, I create full-stack applications 
-              that are not only visually appealing but also performant, scalable, and user-friendly. I'm passionate 
+              that are not only visually appealing but also performant, scalable, and user-friendly. I&apos;m passionate 
               about learning new technologies and staying up-to-date with the latest industry trends.
             </p>
           </div>

@@ -1,9 +1,8 @@
 "use client";
 
-import * as React from "react";
 import { motion } from "framer-motion";
+import { ExternalLink, Github } from "lucide-react";
 import { useInView } from "react-intersection-observer";
-import { ExternalLink, Github, Calendar, Users } from "lucide-react";
 
 interface ProjectCardProps {
   title: string;
@@ -22,7 +21,6 @@ export function ProjectCard({
   title,
   description,
   longDescription,
-  image,
   tech,
   github,
   live,

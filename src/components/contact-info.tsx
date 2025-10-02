@@ -1,18 +1,16 @@
 "use client";
 
-import * as React from "react";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Github, 
-  Linkedin, 
+import {
   Download,
+  Github,
+  Linkedin,
+  Mail,
+  MapPin,
   MessageCircle,
-  Calendar
+  Phone
 } from "lucide-react";
+import { useInView } from "react-intersection-observer";
 
 const contactMethods = [
   {
@@ -76,7 +74,7 @@ export function ContactInfo() {
       <div>
         <h3 className="text-2xl font-bold mb-4">Get in touch</h3>
         <p className="text-muted-foreground leading-relaxed">
-          I'm always excited to hear about new opportunities and interesting projects. 
+          I&apos;m always excited to hear about new opportunities and interesting projects. 
           Whether you want to collaborate, have a question, or just want to say hi, 
           feel free to reach out!
         </p>
@@ -172,7 +170,7 @@ export function ContactInfo() {
           </span>
         </div>
         <p className="text-green-700 dark:text-green-300 text-sm mt-1">
-          I'm currently accepting new freelance and full-time opportunities
+          I&apos;m currently accepting new freelance and full-time opportunities
         </p>
       </motion.div>
     </motion.div>

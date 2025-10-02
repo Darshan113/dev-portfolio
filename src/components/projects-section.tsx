@@ -125,9 +125,9 @@ export function ProjectsSection() {
           <div className="bg-card border border-border rounded-lg p-8 max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold mb-4">Interested in Collaborating?</h3>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              I'm always excited to work on new projects and collaborate with other developers. 
+              I&apos;m always excited to work on new projects and collaborate with other developers. 
               Whether you have an idea for a web application, mobile app, or any other software solution, 
-              I'd love to hear about it!
+              I&apos;d love to hear about it!
             </p>
             <motion.a
               href="/contact"
@@ -135,7 +135,7 @@ export function ProjectsSection() {
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
             >
-              Let's Work Together
+              Let&apos;s Work Together
             </motion.a>
           </div>
         </motion.div>

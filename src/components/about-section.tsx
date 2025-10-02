@@ -32,7 +32,7 @@ const values = [
   {
     title: "Passion",
     icon: <Heart className="h-8 w-8" />,
-    description: "I'm passionate about creating solutions that make a real difference in people's lives."
+    description: "I&apos;m passionate about creating solutions that make a real difference in people&apos;s lives."
   },
   {
     title: "Innovation",
@@ -107,26 +107,26 @@ export function AboutSection() {
             className="space-y-6"
           >
             <h2 className="text-3xl font-bold mb-6">
-              Hi, I'm <span className="text-primary">Darshan Panchal</span>
+              Hi, I&apos;m <span className="text-primary">Darshan Panchal</span>
             </h2>
             
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                I'm a passionate full-stack developer with over 2 years of experience creating 
+                I&apos;m a passionate full-stack developer with over 2 years of experience creating 
                 digital solutions that make a difference. My journey in software development 
-                started during my computer science studies, and I've been hooked ever since.
+                started during my computer science studies, and I&apos;ve been hooked ever since.
               </p>
               
               <p>
                 What drives me is the ability to transform ideas into reality through code. 
                 I love the challenge of solving complex problems and creating user experiences 
-                that are both beautiful and functional. Whether it's building a responsive 
+                that are both beautiful and functional. Whether it&apos;s building a responsive 
                 web application or optimizing performance, I approach every project with 
                 enthusiasm and attention to detail.
               </p>
               
               <p>
-                When I'm not coding, you'll find me exploring new technologies, contributing 
+                When I&apos;m not coding, you&apos;ll find me exploring new technologies, contributing 
                 to open-source projects, or sharing knowledge with the developer community. 
                 I believe in continuous learning and staying up-to-date with the latest 
                 industry trends and best practices.
@@ -203,11 +203,11 @@ export function AboutSection() {
           className="text-center mt-16"
         >
           <div className="bg-card border border-border rounded-lg p-8 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">Let's Connect!</h3>
+            <h3 className="text-2xl font-bold mb-4">Let&apos;s Connect!</h3>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              I'm always excited to meet new people and discuss interesting projects. 
+              I&apos;m always excited to meet new people and discuss interesting projects. 
               Whether you want to collaborate, have a question, or just want to say hi, 
-              I'd love to hear from you!
+              I&apos;d love to hear from you!
             </p>
             <motion.a
               href="/contact"

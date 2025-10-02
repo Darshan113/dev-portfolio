@@ -23,11 +23,11 @@ export function ContactSection() {
           className="text-center mb-16"
         >
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">
-            Let's <span className="text-primary">Connect</span>
+            Lets&apos;s <span className="text-primary">Connect</span>
           </h1>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Have a project in mind or just want to chat? I'd love to hear from you. 
-            Send me a message and I'll get back to you as soon as possible.
+            Have a project in mind or just want to chat? I&apos;d love to hear from you. 
+            Send me a message and I&apos;ll get back to you as soon as possible.
           </p>
         </motion.div>
 
@@ -58,7 +58,7 @@ export function ContactSection() {
               <div>
                 <h4 className="font-semibold mb-2 text-primary">Quality Work</h4>
                 <p className="text-muted-foreground text-sm">
-                  I'm committed to delivering high-quality solutions that exceed expectations.
+                  I&apos;m committed to delivering high-quality solutions that exceed expectations.
                 </p>
               </div>
               <div>

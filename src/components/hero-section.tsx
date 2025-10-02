@@ -65,7 +65,7 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mb-6"
             >
-              <span className="text-primary font-medium">Hello, I'm</span>
+              <span className="text-primary font-medium">Hello, I&apos;m</span>
             </motion.div>
 
             <motion.h1
