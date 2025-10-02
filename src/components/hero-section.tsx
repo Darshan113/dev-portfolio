@@ -4,6 +4,7 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import { ChevronDown, Download, Eye } from "lucide-react";
 import { useInView } from "react-intersection-observer";
+import Image from "next/image";
 
 const skills = [
   { name: "React", level: 90 },
@@ -135,11 +136,18 @@ export function HeroSection() {
               initial={{ scale: 0 }}
               animate={inView ? { scale: 1 } : {}}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="relative mb-8"
+              className="relative mb-12 flex items-center justify-center"
             >
-              <div className="w-64 h-64 rounded-full bg-gradient-to-br from-primary to-primary/60 p-1">
-                <div className="w-full h-full rounded-full bg-card flex items-center justify-center text-6xl font-bold text-primary">
-                  DP
+              <div className="w-64 h-64 rounded-full bg-gradient-to-br from-primary to-primary/60 p-1 flex items-center justify-center">
+                <div className="w-full h-full rounded-full overflow-hidden relative">
+                  <Image
+                    src="/me.jpg"
+                    alt="Darshan Panchal"
+                    fill
+                    className="object-cover"
+                    sizes="256px"
+                    priority
+                  />
                 </div>
               </div>
               <motion.div

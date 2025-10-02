@@ -3,6 +3,7 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Image from "next/image";
 import { 
   Code, 
   Coffee, 
@@ -78,9 +79,16 @@ export function AboutSection() {
             className="flex justify-center lg:justify-start"
           >
             <div className="relative">
-              <div className="w-80 h-80 rounded-full bg-gradient-to-br from-primary to-primary/60 p-1">
-                <div className="w-full h-full rounded-full bg-card flex items-center justify-center text-8xl font-bold text-primary">
-                  DP
+              <div className="w-80 h-80 rounded-full bg-gradient-to-br from-primary to-primary/60 p-1 flex items-center justify-center">
+                <div className="w-full h-full rounded-full overflow-hidden relative">
+                  <Image
+                    src="/me.jpg"
+                    alt="Darshan Panchal"
+                    fill
+                    className="object-cover"
+                    sizes="320px"
+                    priority
+                  />
                 </div>
               </div>
               <motion.div

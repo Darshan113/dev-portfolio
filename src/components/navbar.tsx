@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
@@ -27,19 +28,26 @@ export function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border shadow-sm"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="flex justify-between items-center h-20 px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-20  pr-4 pl-4 lg:px-8">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="text-2xl font-bold text-primary"
+              className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-primary"
             >
-              DP
+              <Image
+                src="/me.jpg"
+                alt="Profile"
+                fill
+                className="object-cover"
+                sizes="40px"
+                priority
+              />
             </motion.div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-12">
+          <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <Link
                 key={item.name}
@@ -61,7 +69,9 @@ export function Navbar() {
                 )}
               </Link>
             ))}
-            <ThemeToggle />
+            <div className="ml-6">
+              <ThemeToggle />
+            </div>
           </div>
 
           {/* Mobile menu button */}
@@ -88,7 +98,7 @@ export function Navbar() {
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden"
           >
-            <div className="px-4 pt-4 pb-6 space-y-3 sm:px-6 border-t border-border">
+            <div className="px-8 pt-4 pb-6 space-y-3 sm:px-12 border-t border-border">
               {navItems.map((item) => (
                 <Link
                   key={item.name}

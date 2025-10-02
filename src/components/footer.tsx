@@ -7,17 +7,17 @@ import { Github, Linkedin, Mail, Download } from "lucide-react";
 const socialLinks = [
   {
     name: "GitHub",
-    href: "https://github.com/darshanpanchal",
+    href: "https://github.com/Darshan113",
     icon: Github,
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/in/darshanpanchal",
+    href: "https://www.linkedin.com/in/darshan-panchal-5519a9253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     icon: Linkedin,
   },
   {
     name: "Email",
-    href: "mailto:darshan@example.com",
+    href: "mailto:dppanchal106@gmail.com",
     icon: Mail,
   },
 ];
@@ -130,7 +130,7 @@ export function Footer() {
           transition={{ duration: 0.5, delay: 0.7 }}
           className="mt-12 pt-8 border-t border-border text-center text-muted-foreground"
         >
-          <p>&copy; 2024 Darshan Panchal. All rights reserved.</p>
+          <p>&copy; 2025 Darshan Panchal. All rights reserved.</p>
         </motion.div>
       </div>
     </footer>
