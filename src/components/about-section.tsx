@@ -112,7 +112,7 @@ export function AboutSection() {
             
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                I'm a passionate full-stack developer with over 4 years of experience creating 
+                I'm a passionate full-stack developer with over 2 years of experience creating 
                 digital solutions that make a difference. My journey in software development 
                 started during my computer science studies, and I've been hooked ever since.
               </p>

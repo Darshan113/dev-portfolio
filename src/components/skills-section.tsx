@@ -3,45 +3,105 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { 
-  Code, 
-  Palette, 
-  Database, 
-  Server, 
-  GitBranch, 
-  Smartphone,
-  Globe,
-  Zap,
-  Shield,
-  Layers
-} from "lucide-react";
 import { SkillCard } from "./skill-card";
 
 const frontendSkills = [
-  { name: "React", level: 90, icon: <Code className="h-6 w-6" />, color: "#61DAFB" },
-  { name: "TypeScript", level: 85, icon: <Code className="h-6 w-6" />, color: "#3178C6" },
-  { name: "Next.js", level: 88, icon: <Globe className="h-6 w-6" />, color: "#000000" },
-  { name: "Angular", level: 85, icon: <Code className="h-6 w-6" />, color: "#DD0031" },
-  { name: "Tailwind CSS", level: 92, icon: <Palette className="h-6 w-6" />, color: "#06B6D4" },
-  { name: "JavaScript", level: 88, icon: <Code className="h-6 w-6" />, color: "#F7DF1E" },
+  { 
+    name: "HTML", 
+    level: 95, 
+    icon: <div className="w-6 h-6 bg-orange-500 rounded flex items-center justify-center text-white text-xs font-bold">H</div>, 
+    color: "#E34F26" 
+  },
+  { 
+    name: "CSS", 
+    level: 90, 
+    icon: <div className="w-6 h-6 bg-blue-500 rounded flex items-center justify-center text-white text-xs font-bold">C</div>, 
+    color: "#1572B6" 
+  },
+  { 
+    name: "JavaScript", 
+    level: 88, 
+    icon: <div className="w-6 h-6 bg-yellow-400 rounded flex items-center justify-center text-black text-xs font-bold">JS</div>, 
+    color: "#F7DF1E" 
+  },
+  { 
+    name: "TypeScript", 
+    level: 85, 
+    icon: <div className="w-6 h-6 bg-blue-600 rounded flex items-center justify-center text-white text-xs font-bold">TS</div>, 
+    color: "#3178C6" 
+  },
+  { 
+    name: "Angular", 
+    level: 80, 
+    icon: <div className="w-6 h-6 bg-red-500 rounded flex items-center justify-center text-white text-xs font-bold">A</div>, 
+    color: "#DD0031" 
+  },
+  { 
+    name: "React", 
+    level: 90, 
+    icon: <div className="w-6 h-6 bg-cyan-400 rounded flex items-center justify-center text-white text-xs font-bold">R</div>, 
+    color: "#61DAFB" 
+  },
+  { 
+    name: "Next.js", 
+    level: 85, 
+    icon: <div className="w-6 h-6 bg-black rounded flex items-center justify-center text-white text-xs font-bold">N</div>, 
+    color: "#000000" 
+  },
 ];
 
 const backendSkills = [
-  { name: "Node.js", level: 80, icon: <Server className="h-6 w-6" />, color: "#339933" },
-  { name: "Express", level: 75, icon: <Server className="h-6 w-6" />, color: "#000000" },
-  { name: "PostgreSQL", level: 70, icon: <Database className="h-6 w-6" />, color: "#336791" },
-  { name: "Python", level: 75, icon: <Code className="h-6 w-6" />, color: "#3776AB" },
-  { name: "FastAPI", level: 70, icon: <Zap className="h-6 w-6" />, color: "#009688" },
-  { name: "MongoDB", level: 65, icon: <Database className="h-6 w-6" />, color: "#47A248" },
+  { 
+    name: "Python", 
+    level: 85, 
+    icon: <div className="w-6 h-6 bg-blue-500 rounded flex items-center justify-center text-white text-xs font-bold">P</div>, 
+    color: "#3776AB" 
+  },
+  { 
+    name: "FastAPI", 
+    level: 80, 
+    icon: <div className="w-6 h-6 bg-teal-500 rounded flex items-center justify-center text-white text-xs font-bold">F</div>, 
+    color: "#009688" 
+  },
+  { 
+    name: "Node.js", 
+    level: 85, 
+    icon: <div className="w-6 h-6 bg-green-600 rounded flex items-center justify-center text-white text-xs font-bold">N</div>, 
+    color: "#339933" 
+  },
+  { 
+    name: "Express", 
+    level: 80, 
+    icon: <div className="w-6 h-6 bg-gray-800 rounded flex items-center justify-center text-white text-xs font-bold">E</div>, 
+    color: "#000000" 
+  },
+  { 
+    name: "PostgreSQL", 
+    level: 75, 
+    icon: <div className="w-6 h-6 bg-blue-700 rounded flex items-center justify-center text-white text-xs font-bold">P</div>, 
+    color: "#336791" 
+  },
+  { 
+    name: "MongoDB", 
+    level: 70, 
+    icon: <div className="w-6 h-6 bg-green-500 rounded flex items-center justify-center text-white text-xs font-bold">M</div>, 
+    color: "#47A248" 
+  },
 ];
 
 const toolsSkills = [
-  { name: "Git", level: 85, icon: <GitBranch className="h-6 w-6" />, color: "#F05032" },
-  { name: "GitHub", level: 90, icon: <GitBranch className="h-6 w-6" />, color: "#181717" },
-  { name: "Responsive Design", level: 88, icon: <Smartphone className="h-6 w-6" />, color: "#FF6B6B" },
-  { name: "Performance", level: 82, icon: <Zap className="h-6 w-6" />, color: "#FFD93D" },
-  { name: "Security", level: 75, icon: <Shield className="h-6 w-6" />, color: "#4ECDC4" },
-  { name: "Testing", level: 70, icon: <Layers className="h-6 w-6" />, color: "#45B7D1" },
+  { 
+    name: "Git", 
+    level: 85, 
+    icon: <div className="w-6 h-6 bg-orange-500 rounded flex items-center justify-center text-white text-xs font-bold">G</div>, 
+    color: "#F05032" 
+  },
+  { 
+    name: "GitHub", 
+    level: 90, 
+    icon: <div className="w-6 h-6 bg-gray-800 rounded flex items-center justify-center text-white text-xs font-bold">GH</div>, 
+    color: "#181717" 
+  },
 ];
 
 export function SkillsSection() {
