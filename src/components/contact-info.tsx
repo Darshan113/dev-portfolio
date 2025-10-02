@@ -16,23 +16,23 @@ const contactMethods = [
   {
     icon: <Mail className="h-6 w-6" />,
     title: "Email",
-    value: "darshan@example.com",
-    href: "mailto:darshan@example.com",
+    value: "dppanchal106@gmail.com",
+    href: "mailto:dppanchal106@gmail.com",
     description: "Send me an email anytime",
   },
   {
     icon: <Phone className="h-6 w-6" />,
     title: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567",
+    value: "+91 9327870121",
+    href: "tel:+919327870121",
     description: "Call me for urgent matters",
   },
   {
     icon: <MapPin className="h-6 w-6" />,
     title: "Location",
-    value: "New York, NY",
+    value: "Nikol, Ahmedabad",
     href: "#",
-    description: "Based in New York",
+    description: "Based in Gujarat, India",
   },
 ];
 
@@ -40,19 +40,19 @@ const socialLinks = [
   {
     name: "GitHub",
     icon: <Github className="h-6 w-6" />,
-    href: "https://github.com/darshanpanchal",
+    href: "https://github.com/Darshan113",
     color: "hover:text-gray-900 dark:hover:text-white",
   },
   {
     name: "LinkedIn",
     icon: <Linkedin className="h-6 w-6" />,
-    href: "https://linkedin.com/in/darshanpanchal",
+    href: "https://www.linkedin.com/in/darshan-panchal-5519a9253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     color: "hover:text-blue-600",
   },
   {
     name: "WhatsApp",
     icon: <MessageCircle className="h-6 w-6" />,
-    href: "https://wa.me/15551234567",
+    href: "https://wa.me/9327870121",
     color: "hover:text-green-600",
   },
 ];
