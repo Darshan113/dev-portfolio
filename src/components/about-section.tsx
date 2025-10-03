@@ -32,7 +32,7 @@ const values = [
   {
     title: "Passion",
     icon: <Heart className="h-8 w-8" />,
-    description: "I&apos;m passionate about creating solutions that make a real difference in people&apos;s lives."
+    description: "I'm passionate about creating solutions that make a real difference in people&apos;s lives."
   },
   {
     title: "Innovation",

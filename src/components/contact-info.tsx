@@ -41,7 +41,7 @@ const socialLinks = [
     name: "GitHub",
     icon: <Github className="h-6 w-6" />,
     href: "https://github.com/Darshan113",
-    color: "hover:text-gray-900 dark:hover:text-white",
+    color: "hover:text-gray-800",
   },
   {
     name: "LinkedIn",
@@ -161,17 +161,32 @@ export function ContactInfo() {
         initial={{ opacity: 0, y: 20 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6, delay: 1.2 }}
-        className="p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg"
+        className="p-6 bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 rounded-lg"
       >
-        <div className="flex items-center space-x-2">
-          <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-          <span className="text-green-800 dark:text-green-200 font-medium">
-            Available for new projects
-          </span>
+        <div className="flex items-center space-x-4 mb-4">
+          <div className="relative">
+            <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+              <div className="w-3 h-3 bg-primary-foreground rounded-full animate-pulse" />
+            </div>
+            <div className="absolute inset-0 w-8 h-8 bg-primary/40 rounded-full animate-ping opacity-30" />
+          </div>
+          <div>
+            <h4 className="font-semibold">Available for new projects</h4>
+            <p className="text-muted-foreground text-sm">
+            I&apos;m currently open to freelance opportunities. Alongside my professional role, I provide web services and collaborate on exciting projects.
+            </p>
+          </div>
         </div>
-        <p className="text-green-700 dark:text-green-300 text-sm mt-1">
-          I&apos;m currently accepting new freelance and full-time opportunities
-        </p>
+        <div className="flex items-center justify-between">
+          <span className="text-xs text-muted-foreground font-medium">
+            Status: Open to freelance opportunities
+          </span>
+          <div className="flex space-x-1">
+            <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+            <div className="w-2 h-2 bg-primary rounded-full animate-pulse" style={{ animationDelay: '0.2s' }} />
+            <div className="w-2 h-2 bg-primary rounded-full animate-pulse" style={{ animationDelay: '0.4s' }} />
+          </div>
+        </div>
       </motion.div>
     </motion.div>
   );
