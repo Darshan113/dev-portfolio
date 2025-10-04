@@ -13,6 +13,7 @@ const navItems = [
   { name: "About", href: "/about" },
   { name: "Skills", href: "/skills" },
   { name: "Projects", href: "/projects" },
+  { name: "Services", href: "/services" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -30,20 +31,12 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center h-20  pr-4 pl-4 lg:px-8">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-primary"
-            >
-              <Image
-                src="/me.jpg"
-                alt="Profile"
-                fill
-                className="object-cover"
-                sizes="40px"
-                priority
-              />
-            </motion.div>
+          <Link href="/" className="flex items-center">
+            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+              <span className="font-bold text-lg text-primary-foreground">
+                DP
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

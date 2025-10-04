@@ -8,7 +8,8 @@ import {
   Mail,
   MapPin,
   MessageCircle,
-  Phone
+  Phone,
+  Briefcase
 } from "lucide-react";
 import { useInView } from "react-intersection-observer";
 
@@ -54,6 +55,12 @@ const socialLinks = [
     icon: <MessageCircle className="h-6 w-6" />,
     href: "https://wa.me/9327870121",
     color: "hover:text-green-600",
+  },
+  {
+    name: "Fiverr",
+    icon: <Briefcase className="h-6 w-6" />,
+    href: "https://www.fiverr.com/s/lj2amgg",
+    color: "hover:text-green-500",
   },
 ];
 
